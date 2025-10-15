@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM.Thermal.Tests", "MGroup.FEM.Thermal.Tests.csproj", "{2ADFB413-F44A-2925-BFD0-59E6CA476FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM.Thermal.Tests", "tests\MGroup.FEM.Thermal.Tests.csproj", "{2ADFB413-F44A-2925-BFD0-59E6CA476FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM", "src\MGroup.FEM\MGroup.FEM.csproj", "{D0DC93BD-756B-26DA-1C29-05DF15B8C082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM.ConvectionDiffusion", "src\MGroup.FEM.ConvectionDiffusion\MGroup.FEM.ConvectionDiffusion.csproj", "{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM.Structural", "src\MGroup.FEM.Structural\MGroup.FEM.Structural.csproj", "{D73D54A6-C816-71D8-F944-063D3AEEC0BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGroup.FEM.Thermal", "src\MGroup.FEM.Thermal\MGroup.FEM.Thermal.csproj", "{25FD0CDA-2C02-95F0-D1E9-0BED423349C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,31 @@ Global
 		{2ADFB413-F44A-2925-BFD0-59E6CA476FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ADFB413-F44A-2925-BFD0-59E6CA476FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ADFB413-F44A-2925-BFD0-59E6CA476FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DC93BD-756B-26DA-1C29-05DF15B8C082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DC93BD-756B-26DA-1C29-05DF15B8C082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DC93BD-756B-26DA-1C29-05DF15B8C082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DC93BD-756B-26DA-1C29-05DF15B8C082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73D54A6-C816-71D8-F944-063D3AEEC0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73D54A6-C816-71D8-F944-063D3AEEC0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73D54A6-C816-71D8-F944-063D3AEEC0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73D54A6-C816-71D8-F944-063D3AEEC0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25FD0CDA-2C02-95F0-D1E9-0BED423349C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25FD0CDA-2C02-95F0-D1E9-0BED423349C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25FD0CDA-2C02-95F0-D1E9-0BED423349C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25FD0CDA-2C02-95F0-D1E9-0BED423349C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0DC93BD-756B-26DA-1C29-05DF15B8C082} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{ADA36DE5-E12D-4F5C-FDFB-D2AB7571F76C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D73D54A6-C816-71D8-F944-063D3AEEC0BF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{25FD0CDA-2C02-95F0-D1E9-0BED423349C0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7ECB9CC1-C58C-49DA-8A19-76E3D9D8E906}
